@@ -41,7 +41,6 @@ export const tweetRouter = createTRPCRouter({
         if (nextItem != null) {
           nextCursor = { id: nextItem.id, createdAt: nextItem.createdAt };
         }
-        nextCursor = {};
       }
 
       return {
